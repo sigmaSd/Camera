@@ -4,6 +4,8 @@
     "specifiers": {
       "jsr:@david/dax@0.39.2": "jsr:@david/dax@0.39.2",
       "jsr:@david/which@0.3": "jsr:@david/which@0.3.0",
+      "jsr:@denosaurs/byte-type@^0.4.0": "jsr:@denosaurs/byte-type@0.4.0",
+      "jsr:@denosaurs/plug@^1.0.5": "jsr:@denosaurs/plug@1.0.5",
       "jsr:@std/assert": "jsr:@std/assert@0.221.0",
       "jsr:@std/assert@^0.213.0": "jsr:@std/assert@0.213.1",
       "jsr:@std/assert@^0.214.0": "jsr:@std/assert@0.214.0",
@@ -36,6 +38,18 @@
       },
       "@david/which@0.3.0": {
         "integrity": "6bdb62c40ac90edcf328e854fa8103a8db21e7c326089cbe3c3a1cf7887d3204"
+      },
+      "@denosaurs/byte-type@0.4.0": {
+        "integrity": "9d6816f4bc3f2dec579007fdaf16688cfa8f070e69f12542997d07c877a1e5c7"
+      },
+      "@denosaurs/plug@1.0.5": {
+        "integrity": "04cd988da558adc226202d88c3a434d5fcc08146eaf4baf0cea0c2284b16d2bf",
+        "dependencies": [
+          "jsr:@std/encoding@0.214",
+          "jsr:@std/fmt@0.214",
+          "jsr:@std/fs@0.214",
+          "jsr:@std/path@0.214"
+        ]
       },
       "@std/assert@0.213.1": {
         "integrity": "24c28178b30c8e0782c18e8e94ea72b16282207569cdd10ffb9d1d26f2edebfe"
@@ -182,5 +196,11 @@
     "https://deno.land/x/plug@1.0.4/mod.ts": "66c655451db25029704176bd2269e4560a71b585e702cf6bc89c78686b39947f",
     "https://deno.land/x/plug@1.0.4/types.ts": "0490359117c53783138f2b6692a34f85bca9237314ba8cdef8ad682d81218d21",
     "https://deno.land/x/plug@1.0.4/util.ts": "61d06ec9b458d86ac42e962474ea70a75d1371e6a71348a697ac0a2b7dfc43ea"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@denosaurs/byte-type@^0.4.0",
+      "jsr:@denosaurs/plug@^1.0.5"
+    ]
   }
 }

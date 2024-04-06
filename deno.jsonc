@@ -9,5 +9,7 @@
   "tasks": {
   },
   "imports": {
+    "@denosaurs/byte-type": "jsr:@denosaurs/byte-type@^0.4.0",
+    "@denosaurs/plug": "jsr:@denosaurs/plug@^1.0.5"
   }
 }

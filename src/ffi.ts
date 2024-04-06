@@ -1,4 +1,4 @@
-import * as plug from "https://deno.land/x/plug@1.0.4/mod.ts";
+import * as plug from "@denosaurs/plug";
 
 export const CapDeviceID = "u32";
 export const CapFormatId = "u32";

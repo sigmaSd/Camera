@@ -1,4 +1,4 @@
-import * as byte from "https://deno.land/x/byte_type@0.4.0/mod.ts";
+import * as byte from "@denosaurs/byte-type";
 import {
   CAPPROPID_EXPOSURE,
   CAPPROPID_FOCUS,
