@@ -8,8 +8,8 @@
  *   CAPPROPID_FOCUS,
  *   CAPPROPID_GAIN,
  *   CAPPROPID_WHITEBALANCE,
- * } from "jsr:@sigma/camera/openpnp";
- * import { OpenPnp } from "../src/openpnp.ts";
+ * } from "jsr:@sigma/camera/ffi";
+ * import { OpenPnp } from "jsr:@sigma/camera/openpnp";
  *
  * if (import.meta.main) {
  *   console.log("OpenPnp Capture Test Program");
