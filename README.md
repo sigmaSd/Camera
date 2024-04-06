@@ -1,4 +1,9 @@
-# OpenPnp-Deno
+# Camera
+
+A cross platform video capture library with a focus on machine vision. (Deno ffi
+bindings to openpnp-capture)
+
+## Usage
 
 ```ts
 import { Camera } from "../src/camera.ts";
@@ -50,6 +55,6 @@ This library exprots 3 levels of abstractions:
 
 - ffi: raw deno bindings to openpnp
 - openpnp: thin javascript wrapper over the raw bidings
-- cameara: high level javascript api
+- camera: high level javascript api
 
 `camera` is the recommended to use.
