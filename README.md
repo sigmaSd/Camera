@@ -29,7 +29,7 @@ if (import.meta.main) {
 
   let frameNum = 0;
   for await (const frame of stream.next({ delay: 100 })) {
-    if (frameNum == 5) break;
+    if (frameNum === 5) break;
     writeBufferAsPPM(++frameNum, formatInfo.width, formatInfo.height, frame);
     console.log(`Written frame to frame_${frameNum}.ppm`);
   }
