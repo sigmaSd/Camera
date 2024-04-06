@@ -6,7 +6,7 @@ bindings to openpnp-capture)
 ## Usage
 
 ```ts
-import { Camera } from "../src/camera.ts";
+import { Camera } from "jsr:@sigma/camera";
 
 if (import.meta.main) {
   console.log("OpenPnp Camera Test Program");
@@ -55,6 +55,6 @@ This library exprots 3 levels of abstractions:
 
 - ffi: raw deno bindings to openpnp
 - openpnp: thin javascript wrapper over the raw bidings
-- camera: high level javascript api
+- default export: high level javascript api
 
-`camera` is the recommended to use.
+The default export is the recommended to use.

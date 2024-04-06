@@ -11,7 +11,7 @@
  *   CAPPROPID_WHITEBALANCE,
  *   CAPRESULT_OK,
  *   LIBRARY,
- * } from "../src/ffi.ts";
+ * } from "jsr:@sigma/camera/ffi";
  *
  * if (import.meta.main) {
  *   console.log("OpenPnp Capture Test Program");

@@ -8,7 +8,7 @@
  *   CAPPROPID_FOCUS,
  *   CAPPROPID_GAIN,
  *   CAPPROPID_WHITEBALANCE,
- * } from "../src/ffi.ts";
+ * } from "jsr:@sigma/camera/openpnp";
  * import { OpenPnp } from "../src/openpnp.ts";
  *
  * if (import.meta.main) {

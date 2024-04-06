@@ -3,7 +3,7 @@
  *
  * @example
  * ```ts
- * import { Camera } from "../src/camera.ts";
+ * import { Camera } from "jsr:@sigma/camera";
  *
  * if (import.meta.main) {
  *   console.log("OpenPnp Camera Test Program");
