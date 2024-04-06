@@ -3,7 +3,7 @@
  *
  * @example
  * ```ts
- * import * as byte from "@denosaurs/byte-type";
+ * import * as byte from "jsr:@denosaurs/byte-type";
  * import {
  *   CAPPROPID_EXPOSURE,
  *   CAPPROPID_FOCUS,
