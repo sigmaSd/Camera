@@ -388,7 +388,7 @@ const SYMBOLS = {
     parameters: [CapContext, CapStream],
     result: "u32",
   },
-} as const;
+} satisfies Deno.ForeignLibraryInterface;
 
 /**
  * Represents the dynamic library instance.
