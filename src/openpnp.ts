@@ -1,7 +1,7 @@
 import * as byte from "https://deno.land/x/byte_type@0.4.0/mod.ts";
 import { LIBRARY } from "./ffi.ts";
-import { FormatInfo, LogLevel } from "./types.ts";
-import { CapPropertyID } from "./types.ts";
+import type { FormatInfo, LogLevel } from "./types.ts";
+import type { CapPropertyID } from "./types.ts";
 import { CAPRESULT_OK } from "./ffi.ts";
 
 export class OpenPnp {

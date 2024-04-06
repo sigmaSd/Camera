@@ -1,5 +1,5 @@
 import { OpenPnp } from "./openpnp.ts";
-import { DeviceInfo, FormatInfoWithId, LogLevel } from "./types.ts";
+import type { DeviceInfo, FormatInfoWithId, LogLevel } from "./types.ts";
 
 export class Camera {
   #pnp: OpenPnp;
