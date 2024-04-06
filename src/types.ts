@@ -1,11 +1,22 @@
+/**
+ * Represents information about the format of the video stream.
+ */
 export interface FormatInfo {
+  /** The width of the video frame in pixels. */
   width: number;
+  /** The height of the video frame in pixels. */
   height: number;
+  /** The four-character code representing the video format. */
   fourcc: string;
+  /** Frames per second (FPS) of the video stream. */
   fps: number;
+  /** Bits per pixel (BPP) of the video stream. */
   bpp: number;
 }
 
+/**
+ * Enumerates the properties for camera capabilities.
+ */
 export enum CapPropertyID {
   Exposure = 1,
   Focus = 2,
@@ -23,6 +34,9 @@ export enum CapPropertyID {
   Last = 14,
 }
 
+/**
+ * Enumerates the levels of logging.
+ */
 export enum LogLevel {
   LOG_EMERG = 0,
   LOG_ALERT = 1,
@@ -39,10 +53,22 @@ export enum LogLevel {
 // Camera types
 /////////////////////////////////////
 
+/**
+ * Represents information about a camera device.
+ */
 export interface DeviceInfo {
+  /** The name of the camera device. */
   name: string;
+  /** The unique identifier of the camera device. */
   id: number;
+  /** Array of supported formats along with their identifiers. */
   formats: FormatInfoWithId[];
 }
 
-export type FormatInfoWithId = FormatInfo & { id: number };
+/**
+ * Represents information about a video format along with its identifier.
+ */
+export type FormatInfoWithId = FormatInfo & {
+  /** The identifier of the format. */
+  id: number;
+};

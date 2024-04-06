@@ -63,6 +63,9 @@ if (import.meta.main) {
     }
     await new Promise((r) => setTimeout(r, 100));
   }
+
+  pnp.closeStream(streamId);
+  pnp.releaseContext();
 }
 
 function writeBufferAsPPM(
