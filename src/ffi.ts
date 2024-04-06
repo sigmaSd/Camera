@@ -126,9 +126,6 @@ export async function instantiate(): Promise<
           x86_64: "-windows-latest-x86_64",
         },
       },
-      prefixes: {
-        windows: "lib",
-      },
     },
     SYMBOLS,
   );
