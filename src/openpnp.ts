@@ -280,12 +280,11 @@ export class OpenPnp {
    * Captures a frame from the stream.
    * @param id - The ID of the stream.
    * @param buffer - The buffer to store the frame.
-   * @returns The captured frame.
    */
   captureFrame(
     id: number,
     buffer: Uint8Array,
-  ) {
+  ): void {
     const res = LIBRARY.symbols.Cap_captureFrame(
       this.#ctx,
       id,
@@ -295,7 +294,6 @@ export class OpenPnp {
     if (res !== CAPRESULT_OK) {
       throw new Error("Cap_captureFrame failed");
     }
-    return buffer;
   }
 
   /**

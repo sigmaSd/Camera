@@ -186,7 +186,7 @@ export class Stream {
    * @param delay - Delay between frame captures in milliseconds.
    * @returns An asynchronous generator yielding frames.
    */
-  async *next({ delay = 100 } = {}) {
+  async *next({ delay = 100 } = {}): AsyncGenerator<Uint8Array, void, unknown> {
     while (true) {
       while (true) {
         if (this.#pnp.hasNewFrame(this.#streamId)) break;

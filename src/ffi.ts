@@ -388,12 +388,12 @@ const SYMBOLS = {
     parameters: [CapContext, CapStream],
     result: "u32",
   },
-} satisfies Deno.ForeignLibraryInterface;
+} as const;
 
 /**
  * Represents the dynamic library instance.
  */
-export const LIBRARY = await instantiate();
+export const LIBRARY: Deno.DynamicLibrary<typeof SYMBOLS> = await instantiate();
 
 /**
  * Instantiates the dynamic library.
