@@ -48,6 +48,14 @@
  * }
  * ```
  *
+ * This library exports 3 levels of abstractions:
+ *
+ * - ffi: raw deno bindings to openpnp
+ * - openpnp: thin javascript wrapper over the raw bidings
+ * - default export: high level javascript api
+ *
+ * The default export is the recommended to use.
+ *
  * @module
  */
 

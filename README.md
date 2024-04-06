@@ -51,7 +51,7 @@ function writeBufferAsPPM(
 }
 ```
 
-This library exprots 3 levels of abstractions:
+This library exports 3 levels of abstractions:
 
 - ffi: raw deno bindings to openpnp
 - openpnp: thin javascript wrapper over the raw bidings
