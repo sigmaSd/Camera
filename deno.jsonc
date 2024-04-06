@@ -1,8 +1,8 @@
 {
-  "name": "@sigma/openpnp",
+  "name": "@sigma/camera",
   "version": "0.1.0",
   "exports": {
-    "./camera": "./src/camera.ts",
+    ".": "./src/camera.ts",
     "./openpnp": "./src/openpnp.ts",
     "./ffi": "./src/ffi.ts"
   },
