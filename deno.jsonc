@@ -1,4 +1,11 @@
 {
+  "name": "@sigma/openpnp",
+  "version": "0.1.0",
+  "exports": {
+    "./camera": "./src/camera.ts",
+    "./openpnp": "./src/openpnp.ts",
+    "./ffi": "./src/ffi.ts"
+  },
   "tasks": {
   },
   "imports": {

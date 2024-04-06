@@ -1,6 +1,3 @@
-# OpenPnp-Deno
-
-```ts
 import { Camera } from "../src/camera.ts";
 
 if (import.meta.main) {
@@ -44,12 +41,3 @@ function writeBufferAsPPM(
   fout.close();
   return true;
 }
-```
-
-This library exprots 3 levels of abstractions:
-
-- ffi: raw deno bindings to openpnp
-- openpnp: thin javascript wrapper over the raw bidings
-- cameara: high level javascript api
-
-`camera` is the recommended to use.

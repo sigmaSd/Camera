@@ -6,7 +6,7 @@ import {
   CAPPROPID_WHITEBALANCE,
   CAPRESULT_OK,
   LIBRARY,
-} from "./src/ffi.ts";
+} from "../src/ffi.ts";
 
 if (import.meta.main) {
   console.log("OpenPnp Capture Test Program");

@@ -92,7 +92,7 @@ const SYMBOLS = {
   },
   Cap_closeStream: {
     parameters: [CapContext, CapStream],
-    result: "void",
+    result: CapResult,
   },
   Cap_hasNewFrame: {
     parameters: [CapContext, CapStream],
@@ -126,6 +126,8 @@ export async function instantiate(): Promise<
           x86_64: "-windows-latest-x86_64",
         },
       },
+      // this line erases the default prefixes
+      prefixes: {},
     },
     SYMBOLS,
   );
