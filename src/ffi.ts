@@ -265,32 +265,32 @@ export const CAPPROPID_LAST = 14;
 /**
  * Represents the data type for a device ID.
  */
-export const CapDeviceID = "u32";
+export const CapDeviceID = "u32" as const;
 
 /**
  * Represents the data type for a format ID.
  */
-export const CapFormatId = "u32";
+export const CapFormatId = "u32" as const;
 
 /**
  * Represents the data type for a result of a capability operation.
  */
-export const CapResult = "u32";
+export const CapResult = "u32" as const;
 
 /**
  * Represents the data type for a stream.
  */
-export const CapStream = "i32";
+export const CapStream = "i32" as const;
 
 /**
  * Represents the data type for a context.
  */
-export const CapContext = "pointer";
+export const CapContext = "pointer" as const;
 
 /**
  * Represents the property IDs for camera capabilities.
  */
-export const CapPropertyID = "u32";
+export const CapPropertyID = "u32" as const;
 
 /**
  * Represents the result code indicating successful operation.
@@ -388,7 +388,7 @@ const SYMBOLS = {
     parameters: [CapContext, CapStream],
     result: "u32",
   },
-} satisfies Deno.ForeignLibraryInterface;
+} as const;
 
 /**
  * Represents the dynamic library instance.
